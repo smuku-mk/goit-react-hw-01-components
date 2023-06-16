@@ -4,18 +4,18 @@ import { randomColor } from './randomColor';
 
 export const Statistics = ({ title, data }) => {
   return (
-    <section class="statistics">
-      <h2 class="title">{title}</h2>
+    <section className="statistics">
+      <h2 className="title">{title}</h2>
 
-      <ul class="stat-list">
+      <ul className="stat-list">
         {data.map(e => (
           <li
-            class="item"
+            className="item"
             key={e.id}
             style={{ backgroundColor: randomColor() }}
           >
-            <span class="label">{e.label}</span>
-            <span class="percentage">{e.percentage}%</span>
+            <span className="label">{e.label}</span>
+            <span className="percentage">{e.percentage}%</span>
           </li>
         ))}
       </ul>
